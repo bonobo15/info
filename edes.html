@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>édes receptek - neptunus receptek</title>
+    <link rel="icon" type="image/x-icon" href="sajat/220411-neptune-dark-spot-se-1035a-34c04b-removebg-preview.png">   
+     <script>
+        var coll = document.getElementsByClassName("lenyiloscucc");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+    <style>
+        body {
+    background:rgb(255, 94, 98);  
+    background: -webkit-linear-gradient(to left, rgb(238, 112, 49), rgb(255, 94, 98));  
+    background: linear-gradient(to left, #ff9966, #ff5e62); 
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background:rgb(255, 94, 98);
+    height: 150px; 
+    display: flex;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a { text-decoration: none; color: white;}
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; color:rgb(255, 255, 255); }
+
+a:focus { text-decoration: none; color:rgb(188, 188, 188); }
+
+a:active { text-decoration: none; color:rgb(241, 141, 91); }
+
+nav {
+    display: block;
+}
+
+footer {
+    background-color: rgb(214, 87, 87);
+    display: flex;
+    height: 60px;
+}
+
+section {
+    display: inline-flexbox;
+}
+
+
+.lenyiloscucc { 
+    background-color: rgba(255, 255, 255, 0.255);
+    width: 100%;
+    border: none;
+    font-size: smaller;
+    display: block;
+    box-sizing: border-box;
+}
+
+.mezeskalacs {
+    background-color: rgba(255, 255, 255, 0.255);
+    max-height: 0;
+    overflow:scroll;
+    transition: max-height 0.5s ease-out;
+}
+
+.active, .collapsible:hover {
+    background-color: rgba(255, 255, 255, 0.255);
+}
+
+.box {
+    width: 28%;
+    height: 200px;
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    display: inline-table;
+    }
+
+ 
+
+
+    .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%
+
+    }
+
+
+    .container {
+    padding: 2px 16px;
+    }
+
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    width: 25%;
+    }
+
+    img {
+    border-radius: 5px 5px 0 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>neptunus receptek</h1>
+        <h2>édes receptek
+        <div class="box">
+            <button type="button" class="lenyiloscucc">menu</button>
+               <div class="mezeskalacs">
+                    <p>
+                        <a href="index.html" class="active">főoldal</a>
+                        <a href="altalanos.html">általános</a>
+                        <a href="edes.html">édes</a>
+                        <a href="sos.html">sós</a>
+                    </p> 
+            </div>
+        </div>
+
+
+    </header>
+
+    <section>
+
+    </section>
+
+    <footer>
+        <h3>hogyan tudsz elérni?</h3>
+        <p>email: neptunus.peceptek.sanyi@gmail.com <br>
+            telefon: +36301231234 <br>
+            lol
+        </p>
+    </footer>
+</body>
+</html>
