@@ -5,23 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>édes receptek - neptunus receptek</title>
     <link rel="icon" type="image/x-icon" href="sajat/220411-neptune-dark-spot-se-1035a-34c04b-removebg-preview.png">   
-     <script>
-        var coll = document.getElementsByClassName("lenyiloscucc");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                } 
-            });
-        }
-    </script>
+
     <style>
-        body {
+body {
     background:rgb(255, 94, 98);  
     background: -webkit-linear-gradient(to left, rgb(238, 112, 49), rgb(255, 94, 98));  
     background: linear-gradient(to left, #ff9966, #ff5e62); 
@@ -120,6 +106,7 @@ section {
     img {
     border-radius: 5px 5px 0 0;
     }
+
     </style>
 </head>
 <body>
@@ -138,8 +125,56 @@ section {
             </div>
         </div>
 
+        <div class="box">
+        <button type="button" class="lenyiloscucc">Ordering</button>
+        <div class="mezeskalacs">
+            <p>Itt ilyen elérhetőség még valszeg változik mert, hogy is tudnának rendenli?</p>
+            <p>Sok</p>
+            <p>nyelvtanilag</p>
+            <p>helyes</p>
+            <p>szó</p>
+            <p>meg</p>
+            <p>mondat</p>
+            <p>magyarul</p>
+            <p>egy</p>
+            <p>angol</p>
+            <p>weboldalon</p>
+
+        </div>
+    </div>
 
     </header>
+
+            <div class="box">
+            <button type="button" class="lenyiloscucc">menu</button>
+               <div class="mezeskalacs">
+                    <p>
+                        <a href="index.html" class="active">főoldal</a>
+                        <a href="altalanos.html">általános</a>
+                        <a href="edes.html">édes</a>
+                        <a href="sos.html">sós</a>
+                    </p> 
+            </div>
+        </div>
+
+        <div class="box">
+        <button type="button" class="lenyiloscucc">Ordering</button>
+        <div class="mezeskalacs">
+            <p>Itt ilyen elérhetőség még valszeg változik mert, hogy is tudnának rendenli?</p>
+            <p>Sok</p>
+            <p>nyelvtanilag</p>
+            <p>helyes</p>
+            <p>szó</p>
+            <p>meg</p>
+            <p>mondat</p>
+            <p>magyarul</p>
+            <p>egy</p>
+            <p>angol</p>
+            <p>weboldalon</p>
+
+        </div>
+    </div>
+
 
     <section>
 
@@ -153,4 +188,19 @@ section {
         </p>
     </footer>
 </body>
+     <script>
+        var coll = document.getElementsByClassName("lenyiloscucc");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
 </html>
